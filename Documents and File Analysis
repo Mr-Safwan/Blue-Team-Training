@@ -11,5 +11,17 @@ Ex:If a malware author wants to hide the string http://malicious-domain.com, the
 Regular strings sees only unreadable, garbled binary noise.
 XORSearch brute-forces all 256 possible single-byte XOR keys in milliseconds, checking if any of them reveal the target string.
 
+Olemeta-olemeta is a specialized, open-source command-line tool used to extract all the standard properties and metadata from OLE files—most notably legacy Microsoft Office documents (like Word .doc, Excel .xls, and PowerPoint .ppt).
 
+oleid- oleid is for quickly assessing its threat level. It acts as a rapid scanner that analyzes Microsoft Office files (both legacy .doc/.xls and modern .docx/.xlsx) to flag structural anomalies and high-risk characteristics typically used by malware.
+
+olevba-It is arguably the most powerful and widely used tool in the python-oletools suite. Its sole job is to extract and analyze VBA (Visual Basic for Applications) macros from Microsoft Office documents. 
+It doesn't just pull the raw code out; it actively parses, decompiles, and performs static code analysis to surface hidden malicious behaviors, obfuscated strings, and C2 indicators.
+Command- olevba filename.docm
+
+ViperMonkey (often executed via the command vmonkey or vmonkey.py) 
+Command: vmonkey fiename.doc
+While tools like olevba read the text statically and look for suspicious strings, vmonkey is a full VBA Emulation engine written in Python
+Instead of just looking at the code, it sets up a fake, 
+isolated internal runtime environment and tricks the macro into executing without actually running it on your host operating system.
 

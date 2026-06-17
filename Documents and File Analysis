@@ -1,1 +1,15 @@
+Exiftool- ExifTool is a powerful, free, and open-source command-line application used for reading, writing, and 
+editing meta information in a wide variety of files (mostly images, but also audio, video, and PDFs).
+Ex:If you've ever wanted to look under the hood of a digital photo to see exactly when it was taken, what camera was used, or where the GPS coordinates point, ExifTool is the gold standard tool for the job.
+
+Command:String 'filename' - to check for find and print list of words within a file
+when we need to look for strings in malicious file we need to lookout for IP Addresses,URLs,User-Agents,File paths,Auto-open,pinging to IPs,start-sleep etc.
+
+Xorsearch-XORSearch is a specialized command-line tool designed to scan a file for a specific target string even if that string has been obfuscated using XOR, ROR (Rotate Right), ROL (Rotate Left), or Shift operations.
+Command: xorsearch filename.exe http
+Ex:If a malware author wants to hide the string http://malicious-domain.com, they might encrypt it with a single-byte XOR key (for example, 0x5A).
+Regular strings sees only unreadable, garbled binary noise.
+XORSearch brute-forces all 256 possible single-byte XOR keys in milliseconds, checking if any of them reveal the target string.
+
+
 

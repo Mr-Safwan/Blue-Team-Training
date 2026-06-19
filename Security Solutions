@@ -6,4 +6,20 @@ Host Intrusion Detection System (HIDS):The Host Intrusion Detection System (HIDS
 
 Protocol-Based Intrusion Detection System (PIDS):A protocol-Based Intrusion Detection System (PIDS) is a type of IDS that examines the traffic between a server and a client in a protocol-specific way.
 
-Application Protocol-based Intrusion Detection System (APIDS)
+Application Protocol-based Intrusion Detection System (APIDS): An Application Protocol-Based Intrusion Detection System (APIDS) is a type of IDS that tries to detect security breaches by monitoring communication in application-specific protocols.
+
+Hybrid Intrusion Detection System:A hybrid Intrusion Detection System is a type of IDS in which two or more violation detection approaches are used together.
+
+Some popular IDS products used in the cybersecurity industry are as follows:
+Zeek/Bro
+Snort
+Suricata
+Fail2Ban
+OSSEC
+
+
+
+Intrusion Prevention System (IPS)
+An Intrusion Prevention System (IPS) is hardware or software that detects security violations by monitoring a network or host and prevents security violations by taking the necessary action.
+
+

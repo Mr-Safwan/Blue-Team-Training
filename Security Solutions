@@ -22,4 +22,68 @@ OSSEC
 Intrusion Prevention System (IPS)
 An Intrusion Prevention System (IPS) is hardware or software that detects security violations by monitoring a network or host and prevents security violations by taking the necessary action.
 
+Types of IPS
+Network-Based Intrusion Prevention System (NIPS)
+Host-Based Intrusion Prevention System (HIPS)
+Network Behavior Analysis (NBA)
+Wireless Intrusion Prevention System (WIPS)
+
+Some popular IPS products used within the cybersecurity industry are as follows:
+Cisco NGIPS
+Suricata
+Fidelis
+
+Types of Firewall
+Application-Level Gateways (Proxy Firewalls)
+Circuit-Level Gateways
+Cloud Firewalls
+Endpoint Firewalls
+Network Address Translation (NAT) Firewalls
+Next-Generation Firewalls (NGFW)
+Packet-Filtering Firewalls
+Stateful Multi-Layer Inspection (SMLI) Firewalls
+Threat-Focused NGFW
+Unified Threat Management (UTM) Firewalls
+
+A firewall is one of the most basic security solutions that should be included in a network. It would not be right to talk about the complete security of a corporate network without a firewall. In addition to being in the existing network, it is also very important that the firewall is correctly configured and managed. It is not possible to protect the network or related host from attacks using only a firewall.
+Some popular Firewall products used in the cybersecurity industry are as follows:
+Fortinet
+Palo Alto Networks
+SonicWall
+Checkpoint
+Juniper
+pfsense
+Sophos
+
+
+
+Endpoint Detection and Response (EDR)
+Endpoint Detection and Response (EDR) is a security product that is installed on endpoint-qualified devices, constantly monitors the activities in the system, tries to detect security threats such as ransomware & malware, and takes action against malicious activities.
+
+EDR products can perform many different operations on the endpoint device. These are the processes that support each other to ensure the security of the device. EDR core components are as follows:
+Endpoint data collection agents
+Automated response
+Analysis and forensics
+
+Ensuring the security of the devices that EDR products need to protect has become an essential element to be considered today. Because attackers aim to gain access to the network by turning to weak devices in terms of security. After gaining access to the network through an endpoint, the attacker tries to access more critical systems. In this way, if there is an endpoint that does not have an EDR product installed and is not sufficiently secure, it can be used by the attacker for initial access.
+SentinelOne
+Crowdstrike
+CarbonBlack
+Palo Alto
+FireEye HX
+
+
+Antivirus Software (AV)
+Antivirus Software (AV) is security software that detects malware on devices and blocks and removes malware from the system before it harms the device.
+
+Types of Antivirus Software
+Signature-Based Scanning
+Heuristic Scanning
+
+Some popular Antivirus products used in the cybersecurity industry are as follows:
+McAfee
+Symantec
+Bitdefender
+Eset
+Norton
 

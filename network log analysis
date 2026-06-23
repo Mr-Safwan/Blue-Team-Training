@@ -1,1 +1,32 @@
+Netflow is a network protocol that collects IP traffic information. Although it was developed by Cisco, it supports Netflow from different manufacturers. Some manufacturers support Sflow or different similar protocols. It is important for it to provide visibility on the network with this protocol regardless of its brand or the developer of the protocol.
+
+NetFlow operates in a stateful manner, monitoring and reporting all IP traffic traversing the monitored interface. Each IP communication is defined as a flow, which represents a set of packets sharing key attributes between a source and destination.
+
+When performing log analysis, the first thing to check is the IP and port information. Once we have this information, we should examine whether the traffic reached its target under the "action" field. 
+In other words, firewall logs provide us with information on the source and destination of the traffic as well as the port used for communication.
+
+VPN is the technology that allows you to connect to a local network that you are not physically connected to. Generally, organizations prefer this technology to access their internal systems remotely.
+
+The most critical elements to analyze in VPN logs are:
+The source IP address initiating the connection
+The authenticated username
+The access request result (success or failure status)
+
+Proxy logs are one of the most important log types when a SOC analyst needs to check which domain/URL a system (server, client, etc.) is making a request to our internal systems and whether it was able to establish a successful connection. 
+It is also important to be able to determine if the domain/URL is a risky category and if there were able establish any successful connections before.
+
+We can detect following suspicious activities through reviewing the proxy logs:
+Connections to/from suspicious URLs
+Infected system detection
+Detection of tunneling activities
+
+The IDS/IPS concept and solutions are technologies developed at the point where only rule-based access controls of firewall devices are not sufficient in the security world. 
+Roughly, while the firewall works on a rule basis so that red apples shall pass and yellows not, IDS/IPS solutions can check whether there are worms in the apple or not. In other words, it has a decision-making mechanism by inspecting the packet content
+
+IDS and IPS have signature database. A signature is a set of rules designed to detect known attacks. The structure that presents this set of rules centrally is called the signature database. 
+
+Following information should be investigated in details when analyzing IDS/IPS logs;
+
+The direction of attack (inbound or outbound) should be checked.
+The event severity level should be checked. Levels are usually set as low, medium, high, critical. High and critical levels indicate that activity is more important, quick action is required, and a false positive is less likely.
 

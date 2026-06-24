@@ -42,4 +42,42 @@ Is the action taken just detection or has it been blocked as well? If the attack
 However, if the action taken for the attack is only a detection, then other similar requests should be reviewed and block action should be applied if the content of the requests coming from the IP address is not false positive.
 
 
+#WAF Log Analysis
+WAF (Web Application Firewall) is the technology used to secure web-based applications. The analysis of firewall or IDS/IPS logs alone are often not sufficient for the detection of web-based attacks. 
+The main reasons for this are the SSL offload issue and the control of the data in the payload (data) part of the web request.
+
+SSL Offload is the decryption of SSL-encrypted traffic. The main purpose of the system is to reduce the load and increase performance, as well as to decrypt the encrypted traffic/request to make the content visible and controllable from a security point of view. 
+In this way, invisible attack vectors in encrypted traffic become detectable or preventable.
+
+In networks equipped with WAF, requests from end users reach WAF first over the internet. Then the WAF inspects the request, and makes the decision whether it will be transferred to the Web Server or not. 
+One of the biggest advantages of WAFs here is that it can perform SSL Off-load, which helps examine the content of HTTPS traffic.
+
+
+WAF systems are generally the systems that handle the web access requests on the public faced systems. 
+Therefore, we can say that WAFs are the first systems to detect web attacks and WAF logs are the ones that help SOC Analysts to detect suspicious activities.
+
+ It is very important for SOC Analysts to be able to analyze web logs correctly. The most commonly used web servers are Microsoft IIS, Apache, Nginx.
+Although the applications are different, the web server logs have similar contents.
+
+Usually (by default) web servers do not write the content of the data sent to the server by POST or PUT to the web log. Therefore, it is important to know this when analyzing web logs.
+
+Server responds back to the requests with some number expressions. These response codes indicates whether the request is successful or unsuccessful.
+
+
+User-Agent Information: Indicates the application that was used for the request. User-Agent information will help understand whether the requests made are by a real user or an automated scanning tool during the web log analysis. Some of the automated web scanning tools are “nikto”, “nessus”, “nmap”. If we see "Mozilla, Chrome", or a similar web browser information on the User-Agent information section that means the request was made by a real user.
+However, the User-Agent information may be changed and so we should be aware of that and make sure to verify the information we see within the logs.
+
+DNS is one of the most basic building blocks of the internet. DNS is basically a technology that is used for domain - IP resolution. 
+Network traffic is basically conducted over IPs and DNS is the system that tells us what the IP address for the server of google.com when we need to access "google.com" .
+
+We should keep the followings when checking these logs:
+Has the system made domain requests in categories that actually should not access?
+Has the system made domain requests that are actually risky categories?
+Were any known services (google drive, one drive, etc.) attempted to access during situations like data leak, and etc.?
+Is there any systems that make requests to domains obtained from Threat Intelligence resources?
+Investigations on DNS logs should be conducted to detect if there is access to DNS Over TLS (DOT) or DNS over HTTPS (DOH) services.
+
+
+
+
 

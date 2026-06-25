@@ -64,7 +64,8 @@ Usually (by default) web servers do not write the content of the data sent to th
 Server responds back to the requests with some number expressions. These response codes indicates whether the request is successful or unsuccessful.
 
 
-User-Agent Information: Indicates the application that was used for the request. User-Agent information will help understand whether the requests made are by a real user or an automated scanning tool during the web log analysis. Some of the automated web scanning tools are “nikto”, “nessus”, “nmap”. If we see "Mozilla, Chrome", or a similar web browser information on the User-Agent information section that means the request was made by a real user.
+User-Agent Information: Indicates the application that was used for the request. User-Agent information will help understand whether the requests made are by a real user or an automated scanning tool during the web log analysis. 
+Some of the automated web scanning tools are “nikto”, “nessus”, “nmap”. If we see "Mozilla, Chrome", or a similar web browser information on the User-Agent information section that means the request was made by a real user.
 However, the User-Agent information may be changed and so we should be aware of that and make sure to verify the information we see within the logs.
 
 DNS is one of the most basic building blocks of the internet. DNS is basically a technology that is used for domain - IP resolution. 

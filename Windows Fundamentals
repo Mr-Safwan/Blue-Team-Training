@@ -45,6 +45,12 @@ Maximum File Name and Path: NTFS supports long file names and extended-length pa
 Flexible Capacity Allocation: NTFS offers disk quotas, file system compression, and the ability to increase volume size by adding unallocated space or mounting volumes at empty folders.
 
 
+#Directory Structure
+In Windows, the root directory is "drive:\", for example, the root directory is usually "C:\". The directory separator is usually a "\", but the operating system also internally recognizes a "/". 
+Physical and virtual drives are named by a drive letter, as opposed to being combined as one.
+
+
+
 
 
 

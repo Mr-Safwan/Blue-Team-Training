@@ -1,1 +1,54 @@
+The hierarchical file structure in Windows OS organizes files and folders in a tree-like format, where data is stored at different levels. 
+Each file or folder is kept inside another folder (called a directory) based on its type or use, making it easier to manage and find information.
+
+A file system is a data structure that maintains the order of digital storage areas, and whose unit is a file. The operating system cannot make sense of the spaces on the disk without the file system. 
+It cannot know which data group is on the disk as a file. So the file system is a very important component for running the operating system. File systems have different types and data structures. This data structure can be different for each file system.
+
+#File Systems Used in Windows
+File systems have also been developed, like every technology that has developed from the past to the present. With the development of technology, the need for new file systems has emerged due to increased processing power and storage capacity. 
+Therefore, different file systems have been developed continuously and released to the market. 
+Windows\ -This is the system directory where all core files needed to run the Windows OS are stored.
+Program Files\ - This folder holds installed software applications (for 64-bit systems).
+Users\ - This directory contains user account data — documents, downloads, settings, etc.
+Temp\ - This is a folder for temporary files. It is used by Windows and various applications to store temporary data.
+System32\ - A subfolder inside Windows It contains vital system files, such as drivers, DLLs, and executables, required for system operations.Example: cmd.exe, taskmgr.exe live here.
+AppName\ - Represents an example application folder inside Program Files. Every installed software usually has its folder here.
+Public\ - Files in this folder are accessible to all users on the system.
+Documents\ - A personal folder under the user profile for storing documents. It’s part of the user’s library folders (like Desktop, Pictures, Downloads).
+
+
+Some of these file systems used in Windows operating systems are given below.
+FAT:The File Allocation Table (FAT) file system was developed and released for personal computers in 1977. Although the purpose of its emergence was to be used on floppy disks, 
+it was adapted to be used in hard drives and other devices over time. The FAT file system is not the default file system for Microsoft Windows operating systems today. Today, it is used in USB flash drives, flash drives, and other embedded systems.
+
+exFAT:ExFAT, or Extensible File Allocation Table, is a file system optimized for flash memory like USB drives and SD cards, introduced by Microsoft in 2006. 
+It allows for larger file sizes and volumes compared to FAT32, making it suitable for modern storage needs
+
+NTFS:New Technology File System (NTFS) was announced and started to be used with the Windows NT 3.1 version in 1993. It was used as the default file system within the Windows operating system with this version and it still is.
+It replaced FAT file system as it is a more advanced file system that is suitable for new technologies. In addition, the NTFS file system also supports Linux and BSD systems.
+New Technology File System (NTFS) is the default file system for modern Windows-based operating system (OS). It provides advanced features, including security descriptors, encryption, disk quotas, and support for rich metadata, enhancing both security and data management. 
+Additionally, NTFS seamlessly integrates with Cluster Shared Volumes (CSV), allowing highly available storage that multiple nodes in a failover cluster can access concurrently. 
+This integration ensures continuous data availability and resilience.
+
+Key Features of NTFS:
+Reliability: NTFS maintains a transaction-based log file to restore file system consistency after failures, minimizing data loss. 
+It includes self-healing capabilities to detect and repair minor corruption without downtime, and the chkdsk utility can repair larger issues while keeping volumes online.
+
+Security: NTFS allows granular access control through Access Control Lists (ACLs) and integrates with BitLocker Drive Encryption to protect sensitive data.
+
+Support for Large Volumes: NTFS can handle volumes up to 8 petabytes, depending on the Windows version and cluster size. Specific limits apply based on cluster size, with a maximum of 2^32 - 1 clusters.
+
+Formatting Requirements: For large files, NTFS recommends specific formatting commands to optimize performance and support large file record segments.
+
+Maximum File Name and Path: NTFS supports long file names and extended-length paths, allowing for names up to approximately 32,767 characters.
+
+Flexible Capacity Allocation: NTFS offers disk quotas, file system compression, and the ability to increase volume size by adding unallocated space or mounting volumes at empty folders.
+
+
+
+
+
+
+
+
 
